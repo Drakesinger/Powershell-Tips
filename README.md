@@ -1,11 +1,24 @@
 # Powershell-Tips
 Some tips for doing stuff with powershell.
 
-## Load modules
+## List available modules
 
-## List modules
+This gives you the modules that are already installed on your PC.
+```powershell
+Get-Module -ListAvailable
+```
 
-## List function from a module
+## List loaded session modules
+
+```powershell
+Get-Module
+```
+## List functions from a module
+
+```powershell
+Get-Command -Module [Module Name]
+```
+You can then call the ```Help``` command on the names of the functions displayed to read the integrated documentation.
 
 ## Download stuff
 
